@@ -16,6 +16,7 @@ function sayHi(param)
 // sayHi(10.5);
 // sayHi("Hello");
 
+
 let rVal = sayHi([10, 20, 30, 40, 50]);
 console.log("Retuned value is :", rVal);
 

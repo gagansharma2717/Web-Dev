@@ -17,7 +17,8 @@ let cap = {
     sayHi: function ()
     {
         console.log("Hello");
-        }
+    }
+    
 
 }
 
