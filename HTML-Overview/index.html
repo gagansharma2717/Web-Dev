@@ -3,7 +3,7 @@
     <head>
         <title>Practise</title>
         <style>
-            /* Accessing Tags  */
+             /* Accessing Tags  */
             h1 {
                 color: red;
             }
@@ -17,10 +17,32 @@
             }
            
             /* Accessing Class */
-            .common {
-                background-color: lawngreen;
+            .common
+            {
+                text-decoration: dotted;
+                font-size: larger;
             }
+            /* Space Combinator */
+            .common p {
+                 background-color: lawngreen;
+             }
+             /* Immediate combinator */
+            .common > p {
+                 background-color: lavender;
+             }
 
+             .common + div {
+                 color: red;
+             }
+
+             .common ~ span {
+                 color: blue;
+             }
+
+             /* Attributes */
+             label[for]{
+                 color: darkorange;
+             }
         </style>
     </head>
     <body>
@@ -41,8 +63,20 @@
             Hello
             <p>Coder</p>
         </div>
-
-        <div class="common">Hello</div>
+        <!-- div.class_name -->
+        <div class="common">
+            <p>HI</p>
+            <div class="something1">
+                Something1
+            </div>
+            <div class="something2">
+                <p>Lorem dolor sit amet consectetur adipisicing elit. Molestias quod debitis architecto voluptate optio autem explicabo at provident esse! Accusamus voluptates fuga tempore nesciunt sint non voluptatem quis nobis libero!</p></div>
+            <div class="something3">Something3</div>
+            
+        </div>
+        <div class="common">Hello
+            <h2>Hi</h2>
+        </div>
 
         <!-- UnOrdered List -->
         <ul>
