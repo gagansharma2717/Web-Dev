@@ -1,7 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Practise</title> 
+        <title>Practise</title>
+        <style>
+             /* Accessing Tags  */
+            h1 {
+                color: red;
+            }
+            p{
+                background-color: lightblue;
+            }
+
+            /* Accessing Id */
+            #unique{
+                text-decoration: underline;
+            }
+           
+            /* Accessing Class */
+            .common
+            {
+                text-decoration: dotted;
+                font-size: larger;
+            }
+            /* Space Combinator */
+            .common p {
+                 background-color: lawngreen;
+             }
+             /* Immediate combinator */
+            .common > p {
+                 background-color: lavender;
+             }
+
+             .common + div {
+                 color: red;
+             }
+
+             .common ~ span {
+                 color: blue;
+             }
+
+             /* Attributes */
+             label[for]{
+                 color: darkorange;
+             }
+        </style>
     </head>
     <body>
         <!-- Headings  -->
@@ -11,5 +53,63 @@
 
         <!-- Paragraph -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum in ab eos soluta iste sint quae atque! Ducimus provident voluptatum laudantium est nulla quae praesentium itaque eveniet iure blanditiis.</p>
+        
+        <!-- Anchor -->
+        <a href="https://www.google.co.in/">Go to Google</a>
+
+        <!-- Division -->
+
+        <div id="unique">
+            Hello
+            <p>Coder</p>
+        </div>
+        <!-- div.class_name -->
+        <div class="common">
+            <p>HI</p>
+            <div class="something1">
+                Something1
+            </div>
+            <div class="something2">
+                <p>Lorem dolor sit amet consectetur adipisicing elit. Molestias quod debitis architecto voluptate optio autem explicabo at provident esse! Accusamus voluptates fuga tempore nesciunt sint non voluptatem quis nobis libero!</p></div>
+            <div class="something3">Something3</div>
+            
+        </div>
+        <div class="common">Hello
+            <h2>Hi</h2>
+        </div>
+
+        <!-- UnOrdered List -->
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+
+        <!-- Ordered List -->
+        <ol>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ol>
+
+        <span>Span is Content filling Tag</span>
+        <br>
+        
+        <img width = "250" src="https://images.unsplash.com/photo-1563207463-ad5de11ff9bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <label for="eml">Email</label>
+            <input type="email" id="eml">
+
+            <label for="pass">Password</label>
+            <input type="password" id="pass">
+
+            <label for="mob">Number</label>
+            <input type="number" id="mob">
+        </form>
     </body>
 </html>
